@@ -3,8 +3,8 @@ USE SuperStore;
 CREATE TABLE sales(
     RowID          INT,
     OrderID        VARCHAR(50),
-    OrderDate      VARCHAR(20),      -- '31-07-2012' format from CSV
-    ShipDate       VARCHAR(20),      -- '31-07-2012'
+    OrderDate      VARCHAR(20),      
+    ShipDate       VARCHAR(20),      
     ShipMode       VARCHAR(50),
     CustomerID     VARCHAR(50),
     CustomerName   VARCHAR(100),
@@ -13,13 +13,13 @@ CREATE TABLE sales(
     ProductID      VARCHAR(50),
     Category       VARCHAR(50),
     ProductName    TEXT,
-    Sales          DECIMAL(10,3),    -- eg: 3709.395, 2565.594
-    Quantity       INT,              -- eg: 7, 9, 14
-    Discount       DECIMAL(4,2),     -- eg: 0, 0.1, 0.2, 0.4
-    Profit         DECIMAL(12,4),    -- eg: 1906.485, -1862.3124
-    Month          INT,              -- 1–12
-    Year           INT,              -- 2011–2014
-    ProfitMargin   VARCHAR(10)       -- '33%', '-8%' text from CSV
+    Sales          DECIMAL(10,3),    
+    Quantity       INT,              
+    Discount       DECIMAL(4,2),     
+    Profit         DECIMAL(12,4),    
+    Month          INT,             
+    Year           INT,              
+    ProfitMargin   VARCHAR(10)       
 );
 
 
